@@ -1,0 +1,36 @@
+<div th:fragment="customerForm">
+    <div class="container">
+        <h4>New | Edit Customer</h4>
+        <form class="customer-form" id="customer-form">
+            <div class="form-group">
+                <label for="customer-name">Customer Name</label>
+                <input type="text" id="customer-name" placeholder="Enter customer name">
+                <p id="name-error" class="error-message"></p>
+            </div>
+
+
+            <div class="form-group">
+                <label for="customer-type">Customer Type</label>
+                <select id="customer-type">
+                    <option value="">Select customer type</option>
+                    <option value="VIP">VIP</option>
+                    <option value="Regular">Regular</option>
+                    <option value="Premium">Premium</option>
+                </select>
+            </div>
+
+
+            <div class="form-group">
+                <label for="customer-address">Address</label>
+                <div class="address-container">
+                    <input type="text" id="customer-address" placeholder="Enter or select address">
+                    <button type="button" id="address-btn" class="location-btn">📍</button>
+                </div>
+            </div>
+
+            <div id="map" class="map-section">
+                <p></p>
+            </div>
+        </form>
+    </div>
+</div>

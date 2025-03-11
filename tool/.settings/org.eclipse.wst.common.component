@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="javawebhighlevel-tool-23.2">
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/target/generated-sources/annotations"/>
+        <dependent-module archiveName="javawebhighlevel-common-23.2.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/javawebhighlevel-common/javawebhighlevel-common">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javawebhighlevel-controller-23.2.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/javawebhighlevel-controller/javawebhighlevel-controller">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javawebhighlevel-jpa-23.2.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/javawebhighlevel-jpa/javawebhighlevel-jpa">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javawebhighlevel-biz-23.2.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/javawebhighlevel-biz/javawebhighlevel-biz">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="javawebhighlevel-tool"/>
+        <property name="java-output-path" value="/javawebhighlevel-tool/target/classes"/>
+    </wb-module>
+</project-modules>

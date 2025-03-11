@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Form with Address Modal</title>
+
+    <!-- Load CSS -->
+    <link rel="stylesheet" th:href="@{/resources/styles/styles.css}">
+</head>
+
+<body>
+
+<!-- Include the form -->
+<div th:replace="fragments/form :: customerForm"></div>
+
+<!-- Include the modal -->
+<div th:replace="fragments/modal :: addressModal"></div>
+
+<!-- Load JavaScript -->
+<script th:src="@{/resources/scripts/scripts.js}"></script>
+<script th:src="@{/resources/scripts/validate.js}"></script>
+<script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAB4DZ0dXTJttvbexvOQn2aVXMC5RkK_L0&loading=async&libraries=places&callback=initMap"
+        defer
+></script>
+
+</body>
+</html>
